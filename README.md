@@ -13,8 +13,14 @@ This repository contains a complete implementation of a conversational chatbot u
 
 - `chatbot_tutorial.ipynb`: Main tutorial notebook with W&B integration
 - `Organizing_Hyperparameter_Sweeps_in_PyTorch_with_W&B.ipynb`: Additional W&B tutorial
-- `conversations.json`, `corpus.json`, `index.json`, `speakers.json`: Dataset files
 - `.gitignore`: Git ignore file excluding large data files and model checkpoints
+
+## Dataset
+
+The tutorial uses the Cornell Movie Dialog dataset:
+- `utterances.jsonl`: Main dataset file (excluded from git due to size)
+- `formatted_movie_lines.txt`: Processed training data (excluded from git due to size)
+- `movie-corpus (1).zip`: Original dataset archive (excluded from git due to size)
 
 ## W&B Sweep Configuration
 
@@ -83,6 +89,7 @@ The W&B integration provides:
 
 ## Notes
 
-- Large data files (`utterances.jsonl`, `formatted_movie_lines.txt`) are excluded from git
+- Large data files (`utterances.jsonl`, `formatted_movie_lines.txt`, `movie-corpus (1).zip`) are excluded from git
 - Model checkpoints are saved locally and can be logged to W&B
 - The tutorial is designed to work with the Cornell Movie Dialog dataset
+- Only the essential notebook files and documentation are included in the repository
